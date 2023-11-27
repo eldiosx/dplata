@@ -843,6 +843,11 @@ Men
   font-size: 13px;
 }
 
+.item .thumb {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 #men .item .thumb .hover-content {
   position: absolute;
   z-index: 2;
