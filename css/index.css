@@ -1382,13 +1382,11 @@ Social
 
 #social {
   margin-top: 90px;
-  padding-bottom: 90px;
-  border-bottom: 3px dotted #eee;
 }
 
 #social .col-2 {
-  padding-left: 0;
-  padding-right: 0;
+  margin: auto;
+
 }
 
 #social .images {
@@ -1399,9 +1397,12 @@ Social
 
 #social .thumb {
   position: relative;
+
+
 }
 
 #social .thumb .icon {
+  border-radius: 10px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1412,6 +1413,11 @@ Social
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
 }
 
 #social .thumb:hover .icon {
@@ -1421,11 +1427,9 @@ Social
 
 #social .thumb .icon h6 {
   color: #fff;
-  position: absolute;
   font-size: 14px;
-  bottom: 40px;
   font-weight: 400;
-  left: 15px;
+  text-align: center;
 }
 
 #social .thumb .icon i {
@@ -1524,6 +1528,8 @@ footer {
 
 footer .logo {
   margin-bottom: 20px;
+  color: #efefef;
+  font-size: 50px;
 }
 
 footer ul li {
@@ -1917,232 +1923,10 @@ footer .under-footer a:hover {
   outline: none;
 }
 
-/* About Us Page */
-
-.about-page-heading {
-  margin-top: 160px;
-  margin-bottom: 30px;
-  background-image: url(../images/about-us-page-heading.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.about-us {
-  margin-top: 80px;
-}
-
-.about-us .left-image img {
-  width: 100%;
-  overflow: hidden;
-}
-
-.about-us .right-content {
-  margin-left: 30px;
-}
-
-.about-us .right-content h4 {
-  font-size: 34px;
-  font-weight: 700;
-  color: #2a2a2a;
-}
-
-.about-us .right-content span {
-  font-size: 14px;
-  color: #aaaaaa;
-  font-weight: 500;
-  display: block;
-  margin-top: 25px;
-}
-
-.about-us .right-content .quote {
-  margin-top: 25px;
-}
-
-.about-us .right-content .quote i {
-  float: left;
-  font-size: 32px;
-  margin-right: 15px;
-  margin-top: 10px;
-}
-
-.about-us .right-content .quote p {
-  font-style: italic;
-  color: #2a2a2a;
-  font-weight: 500;
-}
-
-.about-us .right-content p {
-  font-size: 14px;
-  color: #aaaaaa;
-  font-weight: 500;
-  display: block;
-  margin-top: 25px;
-}
-
-.about-us .right-content ul {
-  border-top: 3px dotted #eee;
-  margin-top: 30px;
-  padding-top: 30px;
-}
-
-.about-us .right-content ul li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.about-us .right-content ul li a {
-  width: 44px;
-  height: 44px;
-  background-color: #2a2a2a;
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  line-height: 44px;
-  border-radius: 50%;
-  transition: all .5s;
-}
-
-.about-us .right-content ul li a:hover {
-  background-color: #eee;
-  color: #2a2a2a;
-}
-
-.our-team {
-  margin-top: 100px;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  border-top: 3px dotted #eee;
-}
-
-.our-team .section-heading {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.our-team .section-heading h2 {
-  margin-bottom: 10px;
-}
-
-.our-team .team-item .thumb {
-  position: relative;
-}
-
-.our-team .team-item .thumb img {
-  width: 100%;
-  overflow: hidden;
-}
-
-.our-team .team-item .thumb .hover-effect {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.9);
-  width: 100%;
-  text-align: center;
-  top: 0;
-  bottom: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .3s;
-}
-
-.our-team .team-item .thumb:hover .hover-effect {
-  opacity: 1;
-  visibility: visible;
-}
-
-.our-team .team-item .thumb .hover-effect .inner-content {
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  width: 100%;
-  transform: translateY(-22px);
-}
-
-.our-team .team-item .thumb .hover-effect .inner-content ul li {
-  display: inline-block;
-  margin: 0px 5px;
-}
-
-.our-team .team-item .thumb .hover-effect .inner-content ul li a {
-  width: 44px;
-  height: 44px;
-  background-color: #fff;
-  color: #2a2a2a;
-  display: inline-block;
-  text-align: center;
-  line-height: 44px;
-  border-radius: 50%;
-  transition: all .3s;
-}
-
-.our-team .team-item .thumb .hover-effect .inner-content ul li a:hover {
-  background-color: #2a2a2a;
-  color: #fff;
-}
-
-.our-team .team-item .down-content {
-  text-align: center;
-  padding-top: 25px;
-}
-
-.our-team .team-item .down-content h4 {
-  font-size: 24px;
-  color: #2a2a2a;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.our-team .team-item .down-content span {
-  font-size: 14px;
-  color: #a1a1a1;
-  font-weight: 500;
-  display: block;
-  font-style: italic;
-}
-
-.our-services {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  border-top: 3px dotted #eee;
-  border-bottom: 3px dotted #eee;
-}
-
-.our-services .section-heading {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.our-services .section-heading h2 {
-  margin-bottom: 10px;
-}
-
-.our-services .service-item {
-  padding: 30px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
-  text-align: center;
-}
-
-.our-services .service-item img {
-  width: 100%;
-  overflow: hidden;
-}
-
-.our-services .service-item h4 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-bottom: 20px;
-}
-
-.our-services .service-item p {
-  margin-bottom: 25px;
-}
-
 /* contact Us Page */
 
 .contact-us {
   margin-top: 90px;
-  border-bottom: 3px dotted #eee;
   padding-bottom: 90px;
 }
 
@@ -2309,6 +2093,10 @@ footer .under-footer a:hover {
 
   footer h4 {
     margin-top: 30px;
+  }
+
+  #social .thumb .icon h6 {
+    font-size: 10px;
   }
 }
 
