@@ -698,7 +698,7 @@ banner
 .main-banner .left-content .inner-content {
   position: absolute;
   left: 100px;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 
@@ -1402,7 +1402,7 @@ Social
 }
 
 #social .thumb .icon {
-  border-radius: 10px;
+  border-radius: 25px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2078,7 +2078,7 @@ footer .under-footer a:hover {
 @media (max-width: 767px) {
   .main-banner .left-content .thumb .inner-content {
     left: 50%;
-    top: 47.5%;
+    top: 30%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
